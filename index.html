@@ -87,6 +87,16 @@ body{background:#fff;color:#17100e}
 .person:has(.original-photo){transform:none!important;animation:none!important;transition:none!important}
 .original-photo{display:block!important;aspect-ratio:auto!important;height:auto!important;overflow:visible!important;background:#fff;transform:none!important}
 .original-photo img{display:block;width:auto!important;max-width:100%;height:auto!important;object-fit:contain!important;object-position:center!important;transform:none!important;rotate:none!important;scale:none!important;filter:none!important;animation:none!important;transition:none!important;margin:0 auto}
+
+/* A slower, stationary peach study with scroll-drawn details. */
+.feature{min-height:430svh}
+.peach-study{transform:none!important;will-change:auto}
+.story-peach .peach-outline{stroke-dasharray:1;stroke-dashoffset:calc(.22 - var(--story-progress,0)*.22);opacity:1}
+.story-peach .peach-fold{transform:none!important;opacity:clamp(.15,calc(var(--story-progress,0)*2),1)}
+.story-peach .peach-leaf{transform:none!important;opacity:clamp(.2,calc((var(--story-progress,0) - .3)*2),1)}
+.story-step{transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+@media(max-width:650px){.feature{min-height:390svh}.feature-sticky{min-height:0;height:100svh;padding:28px 0;justify-content:space-evenly}.story-steps{min-height:290px}.feature-visual{min-height:0;height:28svh}.peach-study{width:min(210px,46vw)}}
+@media(prefers-reduced-motion:reduce){.story-peach path{stroke-dashoffset:0!important;opacity:1!important}}
 </style>
 </head>
 <body>
