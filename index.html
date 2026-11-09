@@ -28,6 +28,24 @@ body{background:#fff;color:#151515}
 @media(max-width:900px){.hero h1{font-size:clamp(74px,11vw,120px)}.pillar{grid-template-columns:58px 1fr 1fr 28px}.person h3{font-size:clamp(22px,2.4vw,28px)}}
 @media(max-width:650px){.navright{gap:14px}.navright a{display:none}.brandtag{font-size:9px;letter-spacing:.04em}.hero{min-height:850px}.hero h1{font-size:clamp(66px,18vw,110px);margin:33px 0 26px}.kicker{font-size:10px}.hero-tagline{font-size:23px}.hero-sub{font-size:14px}.hero-meta{font-size:9px}.hero-visual{opacity:.72}.visual-label{font-size:10px}.visual-coord{font-size:9px}.section{padding:94px 0}.section h2{font-size:clamp(45px,11.5vw,72px)}.manifesto-copy{font-size:17px}.manifesto-foot{font-size:9px}.feature-copy p{font-size:16px}.pillars-intro p,.people-intro p{font-size:16px}.pillar{grid-template-columns:34px 1fr 24px;gap:12px}.pillar p{font-size:13px}.people-intro{margin-bottom:38px}.person-name-zh{font-size:12px}.person-role{font-size:10px}.person p{font-size:13px}.contact-side{font-size:16px}.footer-inner{font-size:9px}}
 
+
+/* Restore the peach as the signature color while keeping the stage light. */
+:root{--peach:#cf8a75;--peach-hot:#c57964}
+.mark,.kicker span,.hero-cta b,.scroll-hint i,.marquee-track b,.pillar-no,.pillar-arrow,.contact-link span{color:#c57964}
+.progress i{background:#c57964}
+.kicker span{background:#c57964}
+.hero h1 .peach-word,.section h2 em,.feature h2 em,.contact h2 em{color:#c57964}
+.halo:after{border-color:rgba(197,121,100,.22)}
+.orbit{border-color:rgba(197,121,100,.22)}
+.orbit:before{background:#c57964}
+.object svg{filter:saturate(.82) brightness(1.04) contrast(.94);opacity:1}
+.object-glow{display:block;background:#d88974;filter:blur(82px);opacity:.12;animation:none}
+.feature-visual:before{background:radial-gradient(circle,rgba(207,138,117,.12),transparent 67%)}
+.choice-orbit:after{border-color:rgba(197,121,100,.38)}
+.choice-core{background:radial-gradient(circle at 33% 28%,#fff5ef,#f2d1c6 42%,#d69b88 74%,#a86b5b);box-shadow:0 9px 34px rgba(153,92,74,.12),inset -8px -11px 18px rgba(92,48,38,.11)}
+.node.n2{background:#c57964}
+@media(prefers-reduced-motion:reduce){.object-glow{display:none}}
+
 </style>
 </head>
 <body>
