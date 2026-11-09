@@ -1,6 +1,6 @@
 # PEACH Lab
 
-A bilingual, responsive landing page for the PEACH Lab student research collective. The site is intentionally dependency-free and uses CSS/SVG motion, scroll reveals, a scroll progress indicator, and a language toggle.
+A bilingual, responsive website for PEACH Lab, an interdisciplinary research group led by senior researchers and principal investigators. The site uses CSS/SVG motion, restrained scroll reveals, a scroll progress indicator, and a language toggle.
 
 ## Customize
 
