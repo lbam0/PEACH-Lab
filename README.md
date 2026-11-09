@@ -1,6 +1,6 @@
 # PEACH Lab
 
-A bilingual, responsive website for PEACH Lab, an interdisciplinary research group led by senior researchers and principal investigators. The site uses CSS/SVG motion, restrained scroll reveals, a scroll progress indicator, and a language toggle.
+A bilingual, responsive website for PEACH Lab, an interdisciplinary research group led by senior researchers and principal investigators. Its visual language pairs a pure white canvas and peach accents with Ionic architecture, while a scroll-led sequence explores perception, comparison, and action.
 
 ## Customize
 
@@ -11,4 +11,4 @@ A bilingual, responsive website for PEACH Lab, an interdisciplinary research gro
 
 ## Publish
 
-The GitHub Actions workflow deploys the static site to GitHub Pages whenever changes are pushed to `main`. Set **Settings → Pages → Build and deployment → Source** to **GitHub Actions** once if Pages has not yet been enabled for the repository.
+The GitHub Actions workflow deploys the static site to GitHub Pages whenever changes are pushed to `main`.
