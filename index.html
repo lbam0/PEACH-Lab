@@ -76,6 +76,12 @@ body{background:#fff;color:#17100e}
 .marquee{display:flex;overflow:hidden}.marquee-track{width:max-content;justify-content:flex-start;animation:marquee 42s linear infinite;gap:34px}.marquee-track>span+span{display:flex}.marquee-track>span{font-size:12px;gap:28px}.marquee:hover .marquee-track{animation-play-state:paused}.peach-study{width:min(80%,390px);transform:rotate(calc(-7deg + var(--story-progress,0)*14deg)) scale(calc(.88 + var(--story-progress,0)*.15));will-change:transform}.story-peach{width:100%;height:auto;overflow:visible}.story-peach path{animation:none;stroke-dasharray:1;stroke-dashoffset:0}.story-peach .peach-fold{opacity:calc(.2 + var(--story-progress,0)*.8)}.story-peach .peach-leaf{transform-origin:53% 24%;transform:rotate(calc(var(--story-progress,0)*-7deg))}.people{align-items:start}.person .member-bio{font:16px/1.85 var(--sans);margin-top:20px;min-height:0}.portrait img{object-position:center 30%}.email{text-transform:none;letter-spacing:0;font-size:18px;overflow-wrap:anywhere}.footer-inner>span:last-child{font-size:0}.footer-inner>span:last-child:after{content:'© 2026 PEACH Lab';font-size:12px}
 @media(max-width:650px){.marquee{height:58px}.marquee-track>span{font-size:11px;gap:24px}.peach-study{width:220px}.person .member-bio{font-size:16px}.email{font-size:16px}}
 @media(prefers-reduced-motion:reduce){.marquee-track{animation:none}.peach-study{transform:none}.story-peach .peach-leaf{transform:none}}
+
+/* Gentle repeating line drawing, with a long resting interval. */
+#peachObject .peach-outline,#peachObject .peach-fold,#peachObject .peach-leaf{animation:peach-cycle 10s ease-in-out infinite;stroke-dasharray:1;stroke-dashoffset:0}
+#peachObject .peach-fold{animation-delay:.25s}#peachObject .peach-leaf{animation-delay:.5s}
+@keyframes peach-cycle{0%{stroke-dashoffset:1;opacity:0}7%{opacity:1}32%,78%{stroke-dashoffset:0;opacity:1}90%,100%{stroke-dashoffset:0;opacity:0}}
+@media(prefers-reduced-motion:reduce){#peachObject .peach-outline,#peachObject .peach-fold,#peachObject .peach-leaf{animation:none;stroke-dashoffset:0;opacity:1}}
 </style>
 </head>
 <body>
